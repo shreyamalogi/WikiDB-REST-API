@@ -31,8 +31,13 @@ const articleSchema = ({
 //mongoose model
 const articleModel = mongoose.model("article", articleSchema);
 
-//get articles route
-app.get("/articles", function(req, res) {
+
+//////////////////////////////////////////request targetting articles route aong with cahined routing////////////////////////
+
+//chained routing
+app.route("/articles")
+
+.get(function(req, res) {
     //get = read
     articleModel.find(function(err, foundArticles) {
         if (!err) {
@@ -41,11 +46,9 @@ app.get("/articles", function(req, res) {
             res.send(err);
         }
     });
-});
+})
 
-
-//post article route
-app.post("/articles", function(req, res) {
+.post(function(req, res) {
     //post = create
     const newArticle = new articleModel({
         //use postman for keys as title and name 
@@ -59,7 +62,24 @@ app.post("/articles", function(req, res) {
             res.send(err);
         }
     });
+})
+
+.delete(function(req, res) {
+    //delete = delete (same like get route)
+
+    articleModel.deleteMany(function(err) {
+        if (!err) {
+            res.send("successfully deleted all the articles")
+        } else {
+            res.send(err);
+        }
+    });
 });
+
+
+
+
+////////////////////////////////////////port///////////////////////////////////////////////////////////////////////////
 
 //server port
 app.listen(3000, function() {
