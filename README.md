@@ -1,7 +1,7 @@
 # WikiDB - REST API 📚
 
 
-[![GitHub stars](https://img.shields.io/github/stars/shreyamalogi/wikiDB.svg?style=social)](https://github.com/shreyamalogi/wikiDB/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/shreyamalogi/WikiDB-REST-API.svg?style=social)](https://github.com/shreyamalogi/WikiDB-REST-API/stargazers)
 
 ### Project Details: 💻🌐📅✍️
 
@@ -12,32 +12,47 @@
 
 ---
 
+### Table of Contents
 
-# Introduction
+1. [Introduction](#introduction)
+2. [Challenges and Solutions](#challenges-and-solutions-)
+3. [How to Run?](#how-to-run)
+4. [API Endpoints](#api-endpoints)
+   - [Articles](#articles)
+   - [Specific Article](#specific-article)
+5. [Easy Explanation](#easy-explanation)
+6. [Project Structure](#project-structure)
+7. [How to Use](#how-to-use)
+8. [How You Can Make?](#how-you-can-make)
+9. [Contribution - Show Your Support](#contribution---show-your-support-star-this-)
+10. [License](#license-%EF%B8%8F)
+
+---
+
+### Introduction
 
 A simple REST API built from scratch by **Shreya Malogi** with Express.js, MongoDB, and Mongoose for handling articles in a wiki-like database.
 
-##  Challenges and Solutions 🚀💻
+### Challenges and Solutions 🚀💻
 
-### 1. EJS Templating
+##### 1. EJS Templating
 - **Challenge:** Implementing dynamic content rendering in HTML templates.
 - **Solution:** Integrated EJS (Embedded JavaScript) as the templating engine, allowing server-side rendering and dynamic content display. 🌐🔍
 
-### 2. RESTful Routing
+##### 2. RESTful Routing
 - **Challenge:** Creating a robust routing system for handling CRUD operations.
 - **Solution:** Implemented RESTful routes using Express.js, providing a clean and organized structure for handling different types of requests. 🚀🌐
 
-### 3. Postman and Robo3T Integration
+##### 3. Postman and Robo3T Integration
 - **Challenge:** Testing API endpoints and interacting with the database during development.
 - **Solution:** Leveraged Postman for API testing, ensuring the correct functionality of routes. Utilized Robo3T for database visualization and management, streamlining the development and debugging process. 🧪🛠️
 
-
-### How to run?
+### How to Run?
 
 1. Clone the repository:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/shreyamalogi/WikiDB-REST-API.git
    ```
 
 2. Navigate to the project directory:
@@ -65,45 +80,44 @@ A simple REST API built from scratch by **Shreya Malogi** with Express.js, Mongo
 
 6. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to interact with the API.
 
-### API Endpoints
+## API Endpoints
 
-#### Articles
+### Articles
 
-#### GET /articles
+##### GET /articles
 
 - Retrieves all articles in the database.
 
-#### POST /articles
+##### POST /articles
 
 - Creates a new article.
 - Requires `title` and `content` in the request body.
 
-#### DELETE /articles
+##### DELETE /articles
 
 - Deletes all articles in the database.
 
-#### Specific Article
+### Specific Article
 
-#### GET /articles/:articleTitle
+##### GET /articles/:articleTitle
 
 - Retrieves a specific article by title.
 
-#### PATCH /articles/:articleTitle
+##### PATCH /articles/:articleTitle
 
 - Updates the content of a specific article.
 - Requires `newContent` in the request body.
 
-#### PUT /articles/:articleTitle
+##### PUT /articles/:articleTitle
 
 - Updates the content of a specific article (overwrite).
 - Requires `newContent` in the request body.
 
-#### DELETE /articles/:articleTitle
+##### DELETE /articles/:articleTitle
 
 - Deletes a specific article by title.
 
-
-###  EASY Explanation:
+### Easy Explanation
 
 Think of this application as a magical toy box, and it has special routes or paths to perform these actions:
 
@@ -129,8 +143,10 @@ So, the application helps you manage your magical toy box by creating, reading, 
 
 Feel free to customize and enhance the API based on your requirements!
 
-### how you can make ?
-[click here](https://github.com/shreyamalogi/REST-API/blob/main/rest%20api%20overview.pdf)
+### How You Can Make?
+
+[Click here](https://github.com/shreyamalogi/REST-API/blob/main/rest%20api%20overview.pdf)
+
 
 
 ### Contribution - Show Your Support (Star This) ⭐🌟📜✨
@@ -139,7 +155,7 @@ Feeling inspired by the world of web development? Contribute to this project and
 
 Don't forget to star the repository! ⭐🌟
 
-## License 🕊️
+### License 🕊️
 
 This project is released under the MIT License, allowing you to share the magic responsibly!
 
